@@ -8,4 +8,4 @@ RUN apt-get update -y && \
     cd TrinityCore && mkdir build && cd build && cmake ../ -DCMAKE_INSTALL_PREFIX=/root/server && \
     make && make install
 
-ENTRYPOINT /bin/bash
+CMD /bin/bash
